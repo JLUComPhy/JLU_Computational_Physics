@@ -15,7 +15,7 @@ elif n_guess >0 and n_guess<n:
   ub = ub
   lb = lb + (ub - lb)/2
 elif n_guess >n and n_guess<1024:
-  ub = ub - (ub - lb)/2m 
+  ub = ub - (ub - lb)/2
   lb = lb
 		
 def judge_random(n):
