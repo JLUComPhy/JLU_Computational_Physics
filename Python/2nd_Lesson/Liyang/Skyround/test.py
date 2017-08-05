@@ -1,24 +1,23 @@
 #!/usr/bin/python
 # -*- coding:UTF-8 -*-
-
 from Tkinter import * 
 
-root = Tk()
-root.title('Skyround-Game')
-#=======================================
-#按键的读取
-key_press = 'w'
-def call_back(event):
-    'callback'
-    global key_press
-    key_press = event.keysym
-    print key_press == '0' or 
-    return
+'''
+tk = Tk()
 
-#接受按键
-root.bind("<Key>", call_back)
-root.focus_set()
-#进入下一个循环
+load = Image.open('hero.jpg') 
+render= ImageTk.PhotoImage(load)  
+
+img = Label(tk, image=render)  
+img.image = render
+img.place(x= 0,y=0)
+
+img.pack
+'''
+root = Tk()
+canvas = Canvas(root, bg = "white")
+canvas.pack()
+hero_img_file = PhotoImage(file = "hero.gif")
+canvas.create_image(0, 0, image = hero_img_file)
 root.mainloop()
-#按键读取完毕
 #========================================
