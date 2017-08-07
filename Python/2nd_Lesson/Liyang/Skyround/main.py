@@ -10,10 +10,12 @@ from gplot import *
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ########################初始化参数模块#############################
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 WIDTH = 72
 LECNGTH = 118
 first_cir = False
 round_number = 1 #记录游戏轮数
+
 
 print ("==============================================")
 print ("==================Skyround====================")
@@ -22,7 +24,7 @@ print ("欢迎来到skyround的世界!")
 print ("请输入主角的名字")
 hero_name = raw_input('>>> ')
 if hero_name == '':
-    hero_name = 'Lazy Player: NOOB'
+    hero_name = 'NOOB'
 print ("请确认游戏的难度(输入1～5的整数)")
 diff_chioce = raw_input('>>> ')
 if diff_chioce == '':
@@ -70,7 +72,7 @@ def move_plot(event):
             hero_pos = find_hero(map_data)
             next_pos = cat_next_block(map_data, key_press)
 
-            return_value =  block_activity(hero_property, map_data, key_press, diff_chioce)
+            return_value =  block_activity(root, hero_property, map_data, key_press, diff_chioce)
             quit_judage = return_value[0]  #是否通关
             hero_property = return_value[1] #英雄属性变化
             

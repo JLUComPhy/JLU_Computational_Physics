@@ -15,34 +15,47 @@ def get_hero(hero_name, hero_class):
     4，牧师，随机性大，加血技能
     '''
     
-    hero_property = {'hero_class':'NOOB', 'name':hero_name, 'HP':100, 'MP':30, 'Attack':10, \
+    hero_property = {'hero_class':'WARRIOR', 'name':hero_name, 'HP':100, 'MP':30, 'Attack':10, \
                           'Armor':0 , 'maxHP':100, 'maxMP':30, 'key': 'Missing...', 'exp':0, 'level':0, \
-                           'die': False, 'rock_destory':False}
+                           'Magicskill':'致命一击' , 'costMP':'2','die': False, 'rock_destory':False, 'esp':0, \
+                           'diemessage':'苟利国家生死以，岂因祸福避趋之!'}
 
     if hero_class == 1:
         hero_property['hero_class'] = 'WARRIOR'
         hero_property['HP'] = random.randint(1500,2000)
-        hero_property['MP'] = random.randint(0,10)
+        hero_property['MP'] = random.randint(1,10)
         hero_property['Attack'] = random.randint(20,30)
         hero_property['Armor'] = random.randint(20,40)
+        hero_property['costMP'] = 2
+        hero_property['Magicskil'] = '致命一击'
+        hero_property['diemessage'] = '苟利国家生死以，岂因祸福避趋之!'
     elif hero_class == 2:
         hero_property['hero_class'] = 'MAGES'
         hero_property['HP'] = random.randint(200,600)
         hero_property['MP'] = random.randint(100,300)
         hero_property['Attack'] = random.randint(100,120)
         hero_property['Armor'] = random.randint(0,10)
+        hero_property['costMP'] = 25
+        hero_property['Magicskil'] = '火球术'
+        hero_property['diemessage'] = '我...我乃...冬堡大法师, 尔等鼠辈...速速退下! (口吐鲜血)咳,咳,咳...'
     elif hero_class == 3:
         hero_property['hero_class'] = 'KNIGHT'
         hero_property['HP'] = random.randint(800,1000)
         hero_property['MP'] = random.randint(20,100)
         hero_property['Attack'] = random.randint(80,100)
         hero_property['Armor'] = random.randint(10,20)
+        hero_property['costMP'] = 10
+        hero_property['Magicskil'] = '群体攻击'
+        hero_property['diemessage'] = 'FOR THE KING!!!'
     elif hero_class == 4:
         hero_property['hero_class'] = 'PRIESTS'
         hero_property['HP'] = random.randint(100,2000)
         hero_property['MP'] = random.randint(10,100)
         hero_property['Attack'] = random.randint(10,150)
         hero_property['Armor'] = random.randint(0,50)
+        hero_property['costMP'] = 5
+        hero_property['Magicskil'] = '生命汲取'
+        hero_property['diemessage'] = '死亡是另一种开始...'
     
     hero_property['maxHP'] = hero_property['HP']
     hero_property['maxMP'] = hero_property['MP']
@@ -75,7 +88,7 @@ def get_enemy(enemy_kind):
                                'exp':1}
     elif enemy_kind == 2:
         enemy_data = {'name':'wolf', 'HP':random.randint(200,400), 'MP':random.randint(0,50), \
-                               'Attack':random.randint(10,30), 'Armor':random.randint(10,20), \
+                               'Attack':random.randint(50,70), 'Armor':random.randint(10,20), \
                                'exp':2}
     elif enemy_kind == 3:
         enemy_data = {'name':'eagle', 'HP':random.randint(100,500), 'MP':random.randint(60,90), \

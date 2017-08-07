@@ -71,7 +71,7 @@ def update_map_data(hero_property, map_data, key_press):
         map_data[next_step[0]][next_step[1]] = -1
     return map_data
 
-def block_activity(hero_property, map_data, key_press, difficulty):
+def block_activity(root, hero_property, map_data, key_press, difficulty):
     '在普通方块上, 随机生成怪物'
     next_step = cat_next_block(map_data, key_press)
     next_element = map_data[next_step[0]][next_step[1]]
@@ -82,16 +82,16 @@ def block_activity(hero_property, map_data, key_press, difficulty):
     if next_element == 1:
         if askyesno("讨厌的石头",'是否要打破石头'):
             hero_property['rock_destory'] = True
-            re_property = battle_creat(hero_property, difficulty, 1)
+            re_property = battle_creat(root, hero_property, difficulty, 1)
     elif next_element == 2:
         re_property = heal_hero(hero_property, difficulty)
     elif next_element == 3:
-        re_property = battle_creat(hero_property, difficulty,3)
+        re_property = battle_creat(root, hero_property, difficulty,3)
     elif next_element == 98:
         re_property = find_key(hero_property)
     elif next_element == 99:     
         if hero_property['key'] == 'FOUND!':
-            if level_clear():
+            if level_clear(hero_property):
                 jud_continue = 1
             else:
                 jud_continue = -1
@@ -99,9 +99,13 @@ def block_activity(hero_property, map_data, key_press, difficulty):
             showinfo(title = '门锁', message = '您还没有钥匙, 钥匙会随机出现在营地(橙色方块)当中')
     else:
         if random.random() < 0.15 * difficulty:
-            re_property = battle_creat(hero_property, difficulty, 0)
+            re_property = battle_creat(root, hero_property, difficulty, 0)
     return jud_continue, re_property
 
-def level_clear():
-    choice_continue = askyesno("Skyround",'胜利！是否继续下一区域')
+def level_clear(hero_property):
+    if hero_property['esp'] > 10:
+        showinfo(title = '成就', message = hero_property['name']+'一局中逃跑超过十次, 获得“以无招胜有招”的称号...')
+    if hero_property['esp'] == 0:
+        showinfo(title = '成就', message = hero_property['name']+'一局中从未逃跑一局, 获得“不怂,就是干!”的称号...')
+    choice_continue = askyesno("Skyround",'是否继续探索下一区域')
     return choice_continue

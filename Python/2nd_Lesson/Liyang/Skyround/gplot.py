@@ -49,7 +49,7 @@ def plot_core(canvas, input_number, plot_width, plot_length):
     elif input_number == 99:
         plot_color = 'green'
     elif input_number == 98:
-        plot_color = 'cyan'#'orange'
+        plot_color = 'orange'#'cyan'
     elif input_number == -1:
         plot_color = 'blue'
     else:
