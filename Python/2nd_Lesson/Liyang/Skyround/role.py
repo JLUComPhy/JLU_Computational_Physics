@@ -27,7 +27,7 @@ def get_hero(hero_name, hero_class):
         hero_property['Attack'] = random.randint(20,30)
         hero_property['Armor'] = random.randint(20,40)
         hero_property['costMP'] = 2
-        hero_property['Magicskil'] = '致命一击'
+        hero_property['Magicskill'] = '致命一击'
         hero_property['diemessage'] = '苟利国家生死以，岂因祸福避趋之!'
     elif hero_class == 2:
         hero_property['hero_class'] = 'MAGES'
@@ -36,7 +36,7 @@ def get_hero(hero_name, hero_class):
         hero_property['Attack'] = random.randint(100,120)
         hero_property['Armor'] = random.randint(0,10)
         hero_property['costMP'] = 25
-        hero_property['Magicskil'] = '火球术'
+        hero_property['Magicskill'] = '火球术'
         hero_property['diemessage'] = '我...我乃...冬堡大法师, 尔等鼠辈...速速退下! (口吐鲜血)咳,咳,咳...'
     elif hero_class == 3:
         hero_property['hero_class'] = 'KNIGHT'
@@ -45,7 +45,7 @@ def get_hero(hero_name, hero_class):
         hero_property['Attack'] = random.randint(80,100)
         hero_property['Armor'] = random.randint(10,20)
         hero_property['costMP'] = 10
-        hero_property['Magicskil'] = '群体攻击'
+        hero_property['Magicskill'] = '群体攻击'
         hero_property['diemessage'] = 'FOR THE KING!!!'
     elif hero_class == 4:
         hero_property['hero_class'] = 'PRIESTS'
@@ -54,7 +54,7 @@ def get_hero(hero_name, hero_class):
         hero_property['Attack'] = random.randint(10,150)
         hero_property['Armor'] = random.randint(0,50)
         hero_property['costMP'] = 5
-        hero_property['Magicskil'] = '生命汲取'
+        hero_property['Magicskill'] = '生命汲取'
         hero_property['diemessage'] = '死亡是另一种开始...'
     
     hero_property['maxHP'] = hero_property['HP']

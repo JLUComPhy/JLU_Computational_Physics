@@ -249,24 +249,3 @@ def plot_battle_sys(root, in_hero_property, in_enemy_property,in_exp):
     plot_battle_core()
 
     return hero_property, enemy_property
-
-
-
-
-
-'''
-if __name__ == '__main__':
-    hero_property = {'hero_class':'WARRIOR', 'name':"hero_name", 'HP':100, 'MP':30, 'Attack':10, \
-                            'Armor':0 , 'maxHP':100, 'maxMP':30, 'key': 'Missing...', 'exp':0, 'level':0, \
-                            'Magicskill':'致命一击' , 'costMP':'2','die': False, 'rock_destory':False, 'esp':0, \
-                            'diemessage':'苟利国家生死以, 岂因祸福避趋之!'}
-
-    enemy_property = [{'name':'wolf', 'HP':random.randint(200,400), 'MP':random.randint(0,50), \
-                                'Attack':random.randint(10,30), 'Armor':random.randint(10,20), \
-                                'exp':2}, {'name':'zombie', 'HP':random.randint(800,1000), 'MP':random.randint(10,70), \
-                                'Attack':random.randint(10,40), 'Armor':random.randint(10,30), \
-                                'exp':10},{'name':'robber', 'HP':random.randint(600,1000), 'MP':random.randint(20,60), \
-                                'Attack':random.randint(60,90), 'Armor':random.randint(20,50), \
-                                'exp':10}]
-    print plot_battle_sys(hero_property, enemy_property)
-'''
