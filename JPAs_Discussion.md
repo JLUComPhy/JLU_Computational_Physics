@@ -17,4 +17,4 @@
 **https://groups.google.com/forum/m/#!forum/jpas_comphy**
 7. 注意: 网页操作**需要翻墙**
 
-# 欢迎您加入我们的
+# 欢迎加入我们的讨论室
