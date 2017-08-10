@@ -1,13 +1,17 @@
 # Skyround 游戏说明
 
-1. 游戏的启动
-执行
-<pre><code>chmod +x main.py
-./main.py</code></pre>
+1. 游戏的启动  
+在终端执行
+```
+chmod +x main.py
+./main.py
+```
 或
-<pre><code>python main.py</code></pre>
+```
+python main.py
+```
 载入地图,  
- 载入成功后按'0'开始游戏
+载入成功后按'0'开始游戏
 
 2. 游戏操作  
 使用wasd键移动, 绿色是出口, 红色是Boss所在地.

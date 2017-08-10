@@ -5,10 +5,12 @@ import random
 from Tkinter import * 
 from role import get_enemy
 from tkMessageBox import *
+import time
 
 
 
 def battle_creat(root, hero_property, difficulty, enemy_kind):
+    '创建怪物信息'
     #1-->10:石头
     #2-->酒馆
     #3-->7,8,9 :boss
