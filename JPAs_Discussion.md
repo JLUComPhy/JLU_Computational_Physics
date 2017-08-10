@@ -14,5 +14,5 @@
 4. 如果您想回帖，请发送**相同主题**的邮件到 **jpas_comphy@googlegroups.com**
 5. 提示: 所有通过邮件操作的内容均**无需翻墙**
 6. 对于上述所有操作, 您也可以通过访问我们的网页来完成   
-https://groups.google.com/forum/m/#!forum/jpas_comphy
+**https://groups.google.com/forum/m/#!forum/jpas_comphy**
 7. 注意: 网页操作**需要翻墙**
