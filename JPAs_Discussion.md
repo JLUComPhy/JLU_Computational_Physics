@@ -17,4 +17,5 @@
 **https://groups.google.com/forum/m/#!forum/jpas_comphy**
 7. 注意: 网页操作**需要翻墙**
 
+# 每次发帖回帖, 在正文内容的第一行, 请注明自己的身份
 # 欢迎加入我们的讨论室
