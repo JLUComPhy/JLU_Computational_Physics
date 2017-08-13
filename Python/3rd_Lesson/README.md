@@ -5,5 +5,5 @@
 不限制是否使用GUI编程.  
 要求该编辑器会自动生成一个filename_history文件,记录filename文件在什么时间做了哪些修改
 
-2. **请使用任意一种您熟悉的文本编辑器总结python2.x与python3.x的不同**
-可以参考runoob中的教程
+2. **请使用任意一种您熟悉的文本编辑器总结python2.x与python3.x的不同**
+可以参考runoob中的教程
