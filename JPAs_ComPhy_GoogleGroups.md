@@ -4,9 +4,9 @@
 *以下是GoogleGroups的操作说明*
 - - -
 
-1. 发送**空邮件**到**jpas_comphy+subscribe@googlegroups.com**  
+1. 发送**任意内容邮件**到**jpas_comphy+subscribe@googlegroups.com**  
    您会收到来自**jpas_comphy+subconfirm@googlegroups.com**的确认信息   
-   回复**空邮件**完成订阅邮件列表
+   回复**任意内容邮件**完成订阅邮件列表
 
 2. 发送邮件到**jpas_comphy@googlegroups.com**以开启新的话题!  
 您的邮件主题即为帖子标题，内容即为帖子的第一条信息  
@@ -17,5 +17,5 @@
 **https://groups.google.com/forum/m/#!forum/jpas_comphy**
 7. 注意: 网页操作**需要翻墙**
 
-# 每次发帖回帖, 在正文内容的第一行, 请注明自己的身份
+# 每次发帖回帖, 在正文内容的**最后一行**, 请注明自己的身份
 # 欢迎加入我们的讨论室
