@@ -1,9 +1,9 @@
 #! /usr/bin/python 
 # -*- coding:UTF-8 -*-
 #Python支持多种图形界面的库，为了不再麻烦去下载新的库，这里直接使用了python自带的tkinter库，记住本代码主要为了练习实现一个简单的GUI界面，顺便熟悉一下tkinter的使用
-from tkinter import *  
+from Tkinter import *  
 import os
-from tkinter import filedialog
+#from Tkinter import filedialog
 
 def die():
     root.destroy()
