@@ -55,7 +55,8 @@ def plot_core(canvas, input_number, plot_width, plot_length):
     else:
         plot_color = 'white'
 
-    canvas.create_rectangle(10+10*plot_length, 10+10*plot_width, 10+10*(plot_length+1), 10+10*(plot_width+1) ,fill=plot_color,outline="black")                       
+    canvas.create_rectangle(10+10*plot_length, 10+10*plot_width, 
+    10+10*(plot_length+1), 10+10*(plot_width+1) ,fill=plot_color,outline="black")                       
     return 
 
 def update_plot(canvas, map_data, hero_pos, next_pos):

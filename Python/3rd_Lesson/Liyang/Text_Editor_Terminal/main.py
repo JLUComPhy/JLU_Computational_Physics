@@ -26,7 +26,7 @@ def update_data(old_data):
   print '=========================edit begin=============================='
   new_data = raw_input('>>') 
   print '************************ edit end *******************************'
-  change_data = get_change_data(old_data, new_data)
+  change_data = get_change_data(old_data, new_data) 
   return new_data, change_data
 
 def get_change_data(old_data, new_data):
@@ -54,50 +54,51 @@ def transform_record_str(change_str):
 
 
 
-#ask the user what the filename and path should be
-data_file_path = ask_path()
+if __name__ == "__main__":
+  #ask the user what the filename and path should be
+  data_file_path = ask_path()
 
-#check if it is a new file to creat 
-check_file = open(data_file_path,'a+')
-check_file.close()
+  #check if it is a new file to creat
+  check_file = open(data_file_path,'a+')
+  check_file.close()
 
-while True:
-  #open the data file to read
-  text_file_read = open(data_file_path)
+  while True:
+    #open the data file for read
+    text_file_read = open(data_file_path)
 
-  #save its content in a temperary space
-  temperary_data = text_file_read.read()
-  #print it's content on screen 
-  print '-------------------------text content------------------------------'
-  print temperary_data
-  print '-------------------------end of the text---------------------------'
-  #close the file open for read
-  text_file_read.close()
+    #save its content in a temperary space
+    temperary_data = text_file_read.read()
+    #print it's content on screen 
+    print '-------------------------text content------------------------------'
+    print temperary_data
+    print '-------------------------end of the text---------------------------'
+    #close the file open for read
+    text_file_read.close()
 
-  #ask if the user mean to change the content
-  print 'Do you want to change the file?(Y/N)'
-  jud_change = raw_input('>')
+    #ask if the user mean to change the content
+    print 'Do you want to change the file?(Y/N)'
+    jud_change = raw_input('>')
 
-  #if so
-  if 'Y' == jud_change or 'y' == jud_change or '' == jud_change:
-    #creat or add contnet to the history record file 
-    history_file_path = get_history_file_path(data_file_path)
-    history_file = open(history_file_path, 'a+')
-    #open the data file to write
-    text_file_write = open(data_file_path, 'w')
-    #enter the editor panel
-    new_data, change_data = update_data(temperary_data)
-    #change the content 
-    text_file_write.write(new_data)
-    #record the change
-    record_change_str = transform_record_str(change_data)
-    history_file.write(record_change_str)  
- 
-    #colse all the file 
-    history_file.close()
-    text_file_write.close()
-  else:
-    print '+++++++++++++++++++++++++++++++++++++++++++++'
-    print 'okay, terminal shot down...'
-    print '+++++++++++++++++++++++++++++++++++++++++++++\n'
-    break
+    #if so
+    if 'Y' == jud_change or 'y' == jud_change or '' == jud_change:
+      #creat or add contnet to the history record file 
+      history_file_path = get_history_file_path(data_file_path)
+      history_file = open(history_file_path, 'a+')
+      #open the data file to write
+      text_file_write = open(data_file_path, 'w')
+      #enter the editor panel
+      new_data, change_data = update_data(temperary_data)
+      #change the content 
+      text_file_write.write(new_data)
+      #record the change
+      record_change_str = transform_record_str(change_data)
+      history_file.write(record_change_str)
+  
+      #colse all the file 
+      history_file.close()
+      text_file_write.close()
+    else:
+      print '+++++++++++++++++++++++++++++++++++++++++++++'
+      print 'okay, terminal shot down...'
+      print '+++++++++++++++++++++++++++++++++++++++++++++\n'
+      break
