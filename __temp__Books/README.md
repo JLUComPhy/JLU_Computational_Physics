@@ -3,4 +3,4 @@
 # GitHub未来将只作为分享代码和笔记之用
 # 如果GitHub的下载速度不理想, 可转到 百度云 下载
 地址信息:
-链接:[链接:http://pan.baidu.com/s/1o8yroHc  密码:dz58]:http://pan.baidu.com/s/1o8yroHc  密码:dz58
+链接:http://pan.baidu.com/s/1o8yroHc  密码:dz58
