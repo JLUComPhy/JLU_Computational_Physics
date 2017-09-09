@@ -116,7 +116,7 @@ Ubuntu就是其中之一.
 ## Linux VS Windows
 1. Windows下系统崩了,你要骂微软; Linux下系统崩了你只能骂自己
 
-2. 是免费的  
+2. 是免费的
  "可以用盗版windows啊!不一样么...我们都是为了学术啊!"  
  "这 话 你 留 着 跟 法 官 去 说!"
 
@@ -196,8 +196,9 @@ sudo apt-get install texlive-full
 　　/usr/local/bin 本地增加的命令
 　　/usr/local/lib 本地增加的库
 ```
-SWAP分区  
-虚拟内存
+SWAP分区: 虚拟内存  
+绝对路径和相对路径  
+隐藏文件
 
 ## Linux的安装
 1. 准备好一个USB安装镜像
@@ -226,7 +227,8 @@ alias
 vim
 cat
 tail
-./
+./    
+echo $PATH
 
 sudo 
 apt_get
@@ -243,6 +245,7 @@ cowthink
 fortune
 
 ssh
+scp
 ping
 
 man
@@ -260,4 +263,51 @@ unmount
 ```
 会用"TAB"键...
 
-## Man的使用
+## 如何正确使用Man 
+***
+ ***有困难? 找男人!***
+
+***
+### man page 边角的数字的意义
+|代号|代表内容|
+|----|----|
+|1|用户在SHELL环境中可以操作的指令或可执行文件|
+|2|系统核心可呼叫的函数与工具|
+|3|一些常用的函数和依赖包, 多为C语言的依赖包|
+|4|硬件文件的说明, ,通常是在/dev下的文件|
+|5|配置文件或者是某些文件的格式|
+|6|游戏|
+|7|惯例与协议|
+|8|系统管理员可执行的管理指令|
+|9|和系统核心有关的文件|
+
+### man page 的基本结构
+|名称|内容说明|
+|----|----|
+|NAME|十分精简的指令和数据名称的说明|
+|SYNOPSIS|简短的语法介绍|
+|DESCRIPTION|完整的说明|
+|OPTIONS|针对SYNOPSIS部分中[OPTIONS...]选项的说明和列举|
+|COMMANDS|在这个程序中可以调用的指令|
+|FILES|这个程序或者参考位于哪个文件中|
+|SEE ALSO|可以参考的, 其他与此指令有关的指令|
+|EXAMPLE|一些例子|
+|BUGS|此程序的BUG|
+|AUTHORS|此程序的作者|
+|COPYRIGHT|此程序的版权信息|
+
+对于一个给定的指令的man page 并不是一定包含上述的所有结构
+
+### 几个编辑器的讲解
+
+vim  
+vscode  
+emacs  
+
+### 讨论班的工具
+
+1. 服务器
+2. GitHub
+3. GoogleGroups
+
+### Latex初步
