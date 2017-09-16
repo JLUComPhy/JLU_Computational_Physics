@@ -61,12 +61,14 @@ tex, latex, xetex, xelatex, texlive, ctex, pdftex, pdflatex
 引擎主要有三种: TeX, pdfTeX, XeTeX
 
 其相互组合, 可生成6种命令:
+
 ||plainTex格式|LaTeX格式|
 |---|----|-----|
 |TeX引擎|tex|N/A|
 |pdfTeX引擎|etex|latex|
 ||pdftex|pdflatex|
-|XeTeX引擎|xetex|xelatex|
+|XeTeX引擎|xetex|xelatex| 
+
 
 较为常用的宏包: xeCJK, enumerate, mathams...  
 较为流行的发行版: 
