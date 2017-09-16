@@ -127,8 +127,8 @@ dvipdfmx demo.dvi
 |.idx |供makeindex处理的索引记录文件|
 |.ind |makeindex处理.idx后生成的格式化索引记录文件|
 |.out |hyperref宏包生成的PDF书签记录文件|
-|.bst |bibtex的引用文献格式|
-|.bib |bibtex的文献数据库|
+|.blg |bibtex的日志文件|
+|.bbl |bibtex的参考文献记录文件|
 
 注:
 很多长篇科技著作在正文之后都附有词汇索引, 以便读者查阅所关心部分的论述.
@@ -696,9 +696,19 @@ MarkDown是一款html向的文本编辑组件
 
 ## 转义字符
 
-## 公式
+## 公式??
 
 ## 和HTML完全兼容
 
 # vscode, vim 和 Emacs
+
+## vscode
+vscode的设置
+
+## Vim
+Vim文件操作模式的转化
+
+## Emacs
+???
+
 实际操作体验
