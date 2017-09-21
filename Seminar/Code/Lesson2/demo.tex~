@@ -1,0 +1,16 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage{xeCJK}
+
+\title{MessageBox}
+\author{liyang}
+\date{}
+
+\begin{document}
+  
+  \maketitle
+
+  \section{you have one message from \LaTeX}
+     Hello, I am \LaTeX.
+
+\end{document}
