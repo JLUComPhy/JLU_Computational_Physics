@@ -12,7 +12,7 @@ monte_carlo_pix_color_num = 0
 
 for colunm in range(jlu_badge.shape[1]):
   for row in range(jlu_badge.shape[2]):
-    #print jlu_badge[colum, row]
+    #print jlu_badge[row, colunm]
    
     white_pix = np.array([255, 255, 255, 255])
     if (jlu_badge[row, colunm] != white_pix).any():
@@ -22,11 +22,11 @@ real_pic_ratio = real_pix_color_num*1.0/(jlu_badge.shape[1]*jlu_badge.shape[2])
 print str(real_pix_color_num)+'/'+str(jlu_badge.shape[1]*jlu_badge.shape[2])+'='\
      +str(real_pic_ratio)
   
-max_pick = 10
+max_pick = 100000000
 for pick in range(max_pick):
   random_row = random.randint(0, jlu_badge.shape[2]-1)
   random_colunm = random.randint(0, jlu_badge.shape[1]-1)
-  #print(pick*1.0/max_pick) 
+  #print(pick*1.0/max_pick)
 
   if (jlu_badge[random_row, random_colunm] != white_pix).any():
     monte_carlo_pix_color_num += 1

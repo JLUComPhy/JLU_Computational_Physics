@@ -24,7 +24,7 @@ int main(void){
       random_y = rand()/(float)(RAND_MAX);
 
       if((random_x*random_x+random_y*random_y)<1.00000){
-        ++num_in_circle
+        ++num_in_circle;
       }
     }
 

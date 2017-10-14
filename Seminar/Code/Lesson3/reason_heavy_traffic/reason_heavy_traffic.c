@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<time.h>
 
-#define kVehicleNum  40
+#define kVehicleNum  100
 #define kTimeRevelution  200
 #define kLimitDistance 10
 #define kLimitVelocity 30
@@ -70,5 +70,3 @@ int main(void){
 
   return 0;
 }
-
-
