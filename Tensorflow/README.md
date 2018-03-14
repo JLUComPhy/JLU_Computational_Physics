@@ -15,7 +15,22 @@
 
 内容: Python基础与Tensorflow简介
 
-参考: 
+## 交流途径: 
+
+IRC匿名交流环境
+```
+IRC服务器地址: 192.241.227.66  //(IRC? 请自行Google) 
+        
+讨论室名称: #tensorflow
+```
+
+QQ群
+```
+吉大物理学术沙龙:
+586112524
+```
+
+## 参考: 
 1. Tensorflow Github项目: https://github.com/tensorflow/tensorflow
 2. Tensorflow 官网(需要挂载全局代理): https://www.tensorflow.org
 3. Tensorflow Wikipedia:  https://en.wikipedia.org/wiki/TensorFlow
